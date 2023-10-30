@@ -1,0 +1,28 @@
+.button-new-note {
+  display: inline-flex;
+  padding: 42px 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 65px;
+  background: var(--navy, #050f28);
+  border: none;
+  color: var(--white, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 16.2px */
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  &:hover {
+    background: var(--light-blue, #88a1de);
+  }
+}
+
+@media (max-width: 576px) {
+  .button-new-note {
+    padding: 42px 32px;
+    width: 100%;
+    font-size: 16px;
+  }
+}

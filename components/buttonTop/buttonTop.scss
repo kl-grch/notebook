@@ -1,0 +1,23 @@
+.button-top {
+  display: flex;
+  padding: 24px 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 40px;
+  background: var(--light-blue, #88a1de);
+  cursor: pointer;
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__title {
+    color: var(--navy, #050f28);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,28 @@
+.button-more {
+  display: flex;
+  padding: 42px 107px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: var(--white, #fff);
+  color: var(--navy, #050f28);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%; /* 19.8px */
+  letter-spacing: 1.32px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    border: 2px solid var(--light-blue, #88a1de);
+    background: var(--grey, #f6f6f6);
+  }
+}
+
+@media (max-width: 768px) {
+  .button-more {
+    padding: 42px 54px;
+    font-size: 21px;
+  }
+}

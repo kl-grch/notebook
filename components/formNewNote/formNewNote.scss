@@ -1,0 +1,119 @@
+.form-new-note {
+  width: 1214px;
+  height: 637px;
+  border-radius: 40px;
+  background: var(--white, #fff);
+  padding: 45px 60px 53px 60px;
+  position: relative;
+  &__btn-close {
+    position: absolute;
+    top: 27px;
+    right: 34px;
+    cursor: pointer;
+  }
+  &__title {
+    width: 280px;
+    height: 46px;
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 41px;
+  }
+  &__form {
+    .form {
+      &__row-one {
+        width: 100%;
+        display: flex;
+        gap: 42px;
+        margin-bottom: 22px;
+      }
+      &__row-two {
+        margin-bottom: 43px;
+      }
+
+      &__inputs {
+        width: 100%;
+        .inputs {
+          &__input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            label {
+              color: #000;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 110%;
+            }
+            input {
+              width: 100%;
+              height: 80px;
+              border-radius: 4px;
+              background: var(--grey, #f6f6f6);
+              border: none;
+              padding: 10px;
+              -webkit-appearance: none;
+            }
+            input:focus {
+              border-color: var(--error, #ff832a);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1214px) {
+  .form-new-note {
+    width: 924px;
+    height: 745px;
+    padding: 46px 49px 50px 50px;
+    &__btn-close {
+      top: 17px;
+      right: 18px;
+    }
+    &__title {
+      font-size: 42px;
+    }
+    &__form {
+      .form {
+        &__row-one {
+          flex-direction: column;
+          gap: 23px;
+          margin-bottom: 20px;
+        }
+        &__row-two {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .form-new-note {
+    width: 100%;
+    height: 100%;
+    padding: 46px 10px 20px 10px;
+    &__btn-close {
+      top: 8px;
+      right: 10px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 32px;
+      width: 213px;
+      height: 35px;
+    }
+    &__form {
+      .form {
+        &__row-two {
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+}
